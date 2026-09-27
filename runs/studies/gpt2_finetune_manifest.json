@@ -1,0 +1,43 @@
+{
+  "base_model": "openai-community/gpt2",
+  "batch": 16,
+  "dtype": "float32",
+  "final_val_acc": 0.976,
+  "gate_passed": true,
+  "gpu_name": "AMD Radeon RX 6900 XT",
+  "history": [
+    {
+      "epoch": 0,
+      "val_acc": 0.3293
+    },
+    {
+      "epoch": 1,
+      "mean_loss": 0.4208,
+      "val_acc": 0.976
+    }
+  ],
+  "label_ids": {
+    "False": 10352,
+    "True": 6407,
+    "Unknown": 16185
+  },
+  "lr": 5e-05,
+  "max_epochs": 5,
+  "out_dir": "models/gpt2-ruletaker",
+  "proceed_gate": 0.9,
+  "purpose": "pre-registered positive control (PREREG_gpt2_control.md)",
+  "seed": 0,
+  "shortcuts_taken": [],
+  "torch": "2.9.1+rocm7.2.4.git39497456",
+  "train": {
+    "file": "studies/ruletaker_train.json",
+    "n": 8001,
+    "seed": 1
+  },
+  "val": {
+    "file": "studies/ruletaker_val.json",
+    "n": 501,
+    "seed": 2
+  },
+  "weights_sha256": "1449b175926e6284e64d61c17b47738b83cb629870c4b37386fae47ad8c7cf4c"
+}

@@ -1,0 +1,35 @@
+{
+  "determinism_byte_identical": true,
+  "dtype": "float32",
+  "env": {
+    "cuda_available": true,
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "gpu_type_pinned": "A100-80GB",
+    "tag": "fp32_recheck",
+    "torch": "2.9.1+cu128",
+    "torch_cuda": "12.8",
+    "transformers": "5.13.0"
+  },
+  "gate_verdict_fp32": "KILL \u2014 CI covers 0 (no C1-shaped effect under clean controls)",
+  "ko_punct_minus_attnM_logit": {
+    "boot95": [
+      -1.2328,
+      0.0152
+    ],
+    "ci_covers_0": true,
+    "mean": -0.6053,
+    "n": 167,
+    "sd_sample": 4.0793
+  },
+  "ko_punct_minus_attnM_margin": {
+    "boot95": [
+      -0.3176,
+      0.7785
+    ],
+    "ci_covers_0": true,
+    "mean": 0.2262,
+    "n": 167,
+    "sd_sample": 3.6007
+  },
+  "n_items": 167
+}

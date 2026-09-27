@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+models/
+studies/ruletaker_train.json
+studies/ruletaker_val.json
+.venv/

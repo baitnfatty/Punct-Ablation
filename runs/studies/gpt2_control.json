@@ -1,0 +1,4707 @@
+{
+  "study": "gpt2_positive_control",
+  "model_dir": "models/gpt2-ruletaker",
+  "weights_sha256": "1449b175926e6284e64d61c17b47738b83cb629870c4b37386fae47ad8c7cf4c",
+  "dtype": "float32",
+  "gpu_name": "AMD Radeon RX 6900 XT",
+  "deterministic_algorithms": true,
+  "n_items": 165,
+  "n_skipped": 15,
+  "n_match_flagged": 0,
+  "contrasts": {
+    "A_ko_readside": {
+      "punct_vs_baseline_mean": 3.6014,
+      "accuracy_after": 0.9636,
+      "baseline_accuracy": 0.9167
+    },
+    "A_wa_faithful_PnP": {
+      "punct_vs_baseline_mean": -22.6857,
+      "accuracy_after": 0.2727,
+      "baseline_accuracy": 0.9167
+    },
+    "B_ko_logit": {
+      "mean": 14.8268,
+      "sd_sample": 14.1664,
+      "n": 165,
+      "boot95": [
+        12.7249,
+        17.0005
+      ],
+      "ci_covers_0": false
+    },
+    "B_ko_margin": {
+      "mean": 4.2599,
+      "sd_sample": 7.7663,
+      "n": 165,
+      "boot95": [
+        3.1173,
+        5.485
+      ],
+      "ci_covers_0": false
+    },
+    "B_wa_logit": {
+      "mean": 4.7644,
+      "sd_sample": 16.5572,
+      "n": 165,
+      "boot95": [
+        2.2737,
+        7.2937
+      ],
+      "ci_covers_0": false
+    },
+    "B_wa_margin": {
+      "mean": -0.2691,
+      "sd_sample": 1.869,
+      "n": 165,
+      "boot95": [
+        -0.5517,
+        0.0142
+      ],
+      "ci_covers_0": true
+    },
+    "B_wa_logit_no_pos0_matched": {
+      "mean": 4.7644,
+      "sd_sample": 16.5572,
+      "n": 165,
+      "boot95": [
+        2.2737,
+        7.2937
+      ],
+      "ci_covers_0": false
+    },
+    "B_ko_logit_no_pos0_matched": {
+      "mean": 14.8268,
+      "sd_sample": 14.1664,
+      "n": 165,
+      "boot95": [
+        12.7249,
+        17.0005
+      ],
+      "ci_covers_0": false
+    },
+    "n_attnM_includes_pos0": 0
+  },
+  "shortcuts_taken": [],
+  "per_item": [
+    {
+      "id": 0,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.1902,
+      "base_margin": 8.1923,
+      "ko_punct": [
+        -0.927,
+        -2.0839
+      ],
+      "ko_attnM": [
+        1.2382,
+        -2.5056
+      ],
+      "wa_punct": [
+        20.861,
+        -10.9595
+      ],
+      "wa_attnM": [
+        -12.8685,
+        -9.5497
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 1,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.6868,
+      "base_margin": 11.3961,
+      "ko_punct": [
+        6.193,
+        1.725
+      ],
+      "ko_attnM": [
+        -4.4119,
+        0.6598
+      ],
+      "wa_punct": [
+        -68.3856,
+        -17.223
+      ],
+      "wa_attnM": [
+        -63.0258,
+        -16.3457
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 2,
+      "label": "Unknown",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.1181,
+      "base_margin": 7.526,
+      "ko_punct": [
+        3.0615,
+        -3.5661
+      ],
+      "ko_attnM": [
+        -5.3629,
+        -0.3884
+      ],
+      "wa_punct": [
+        -16.5357,
+        -3.5592
+      ],
+      "wa_attnM": [
+        -11.8971,
+        -6.577
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 3,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.8536,
+      "base_margin": 8.1755,
+      "ko_punct": [
+        2.3933,
+        -1.9
+      ],
+      "ko_attnM": [
+        -0.7654,
+        -4.8747
+      ],
+      "wa_punct": [
+        7.881,
+        -11.5307
+      ],
+      "wa_attnM": [
+        -28.4227,
+        -9.5115
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 4,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.076,
+      "base_margin": 10.5061,
+      "ko_punct": [
+        5.6006,
+        1.3414
+      ],
+      "ko_attnM": [
+        -4.4736,
+        -2.0297
+      ],
+      "wa_punct": [
+        -55.1275,
+        -16.0779
+      ],
+      "wa_attnM": [
+        -46.2863,
+        -15.7257
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 5,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.1474,
+      "base_margin": 5.7912,
+      "ko_punct": [
+        4.8326,
+        -3.3661
+      ],
+      "ko_attnM": [
+        -1.755,
+        0.2873
+      ],
+      "wa_punct": [
+        2.0048,
+        -1.8176
+      ],
+      "wa_attnM": [
+        -8.456,
+        -2.3359
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 6,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.0665,
+      "base_margin": 7.3023,
+      "ko_punct": [
+        6.7902,
+        -2.5675
+      ],
+      "ko_attnM": [
+        -5.9963,
+        -5.6038
+      ],
+      "wa_punct": [
+        -14.5562,
+        -11.2434
+      ],
+      "wa_attnM": [
+        -22.7499,
+        -9.035
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 7,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -53.5057,
+      "base_margin": 10.0081,
+      "ko_punct": [
+        7.7417,
+        0.8786
+      ],
+      "ko_attnM": [
+        -34.2188,
+        -19.3536
+      ],
+      "wa_punct": [
+        -49.534,
+        -15.8338
+      ],
+      "wa_attnM": [
+        -39.3541,
+        -14.6297
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 8,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.2979,
+      "base_margin": 5.049,
+      "ko_punct": [
+        0.2773,
+        -2.7561
+      ],
+      "ko_attnM": [
+        -1.4837,
+        -0.0798
+      ],
+      "wa_punct": [
+        -22.8746,
+        -0.6561
+      ],
+      "wa_attnM": [
+        -12.9198,
+        -4.7851
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 9,
+      "label": "True",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -75.8516,
+      "base_margin": 7.4115,
+      "ko_punct": [
+        3.4734,
+        -1.9803
+      ],
+      "ko_attnM": [
+        -11.0979,
+        -4.417
+      ],
+      "wa_punct": [
+        3.0431,
+        -10.6479
+      ],
+      "wa_attnM": [
+        26.7,
+        -11.0651
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 10,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -38.6669,
+      "base_margin": 9.9527,
+      "ko_punct": [
+        4.3061,
+        2.1381
+      ],
+      "ko_attnM": [
+        -7.6025,
+        -0.1049
+      ],
+      "wa_punct": [
+        -54.2668,
+        -15.2536
+      ],
+      "wa_attnM": [
+        -49.3089,
+        -15.0387
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 11,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.6668,
+      "base_margin": 3.2514,
+      "ko_punct": [
+        2.0627,
+        -2.9394
+      ],
+      "ko_attnM": [
+        -10.6217,
+        -3.1425
+      ],
+      "wa_punct": [
+        -28.1721,
+        0.4338
+      ],
+      "wa_attnM": [
+        -38.2108,
+        -1.7012
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 12,
+      "label": "True",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.713,
+      "base_margin": 8.0072,
+      "ko_punct": [
+        1.4082,
+        -0.9555
+      ],
+      "ko_attnM": [
+        -13.5787,
+        -5.4502
+      ],
+      "wa_punct": [
+        -15.6034,
+        -11.9812
+      ],
+      "wa_attnM": [
+        4.1069,
+        -10.9061
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 13,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -33.2808,
+      "base_margin": 11.0597,
+      "ko_punct": [
+        0.2262,
+        -0.0912
+      ],
+      "ko_attnM": [
+        -41.1121,
+        -20.1976
+      ],
+      "wa_punct": [
+        -73.8934,
+        -16.8758
+      ],
+      "wa_attnM": [
+        -53.6632,
+        -16.3278
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 14,
+      "label": "Unknown",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -66.3026,
+      "base_margin": 4.9184,
+      "ko_punct": [
+        0.3103,
+        -3.7232
+      ],
+      "ko_attnM": [
+        -2.6177,
+        0.098
+      ],
+      "wa_punct": [
+        -24.9213,
+        -0.7268
+      ],
+      "wa_attnM": [
+        -11.5057,
+        -2.7213
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 15,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -69.1847,
+      "base_margin": 7.2749,
+      "ko_punct": [
+        0.8069,
+        -1.7436
+      ],
+      "ko_attnM": [
+        1.6133,
+        -0.7439
+      ],
+      "wa_punct": [
+        -12.8634,
+        -10.9276
+      ],
+      "wa_attnM": [
+        -24.4358,
+        -8.269
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 16,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.0249,
+      "base_margin": 10.9328,
+      "ko_punct": [
+        5.875,
+        1.5057
+      ],
+      "ko_attnM": [
+        -4.1555,
+        0.8987
+      ],
+      "wa_punct": [
+        -45.2479,
+        -16.7091
+      ],
+      "wa_attnM": [
+        -71.7542,
+        -16.7412
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 17,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -65.2767,
+      "base_margin": 4.0753,
+      "ko_punct": [
+        -0.968,
+        -3.1705
+      ],
+      "ko_attnM": [
+        0.102,
+        -1.528
+      ],
+      "wa_punct": [
+        -13.0431,
+        -0.0669
+      ],
+      "wa_attnM": [
+        -28.91,
+        -1.9431
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 18,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.9353,
+      "base_margin": 6.8923,
+      "ko_punct": [
+        3.3022,
+        -1.9825
+      ],
+      "ko_attnM": [
+        -4.5822,
+        -4.2348
+      ],
+      "wa_punct": [
+        -5.7327,
+        -10.9982
+      ],
+      "wa_attnM": [
+        1.7292,
+        -8.5737
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 19,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.777,
+      "base_margin": 9.8893,
+      "ko_punct": [
+        2.1134,
+        0.9157
+      ],
+      "ko_attnM": [
+        -28.4323,
+        -16.789
+      ],
+      "wa_punct": [
+        -40.1714,
+        -15.3288
+      ],
+      "wa_attnM": [
+        -36.6403,
+        -15.4335
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 20,
+      "label": "Unknown",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -68.192,
+      "base_margin": 4.7411,
+      "ko_punct": [
+        -4.9365,
+        -4.5319
+      ],
+      "ko_attnM": [
+        -7.7671,
+        0.902
+      ],
+      "wa_punct": [
+        -11.579,
+        -1.0918
+      ],
+      "wa_attnM": [
+        -17.3968,
+        -4.4513
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 21,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.4846,
+      "base_margin": 7.1487,
+      "ko_punct": [
+        4.7852,
+        -1.3229
+      ],
+      "ko_attnM": [
+        -5.8083,
+        -1.5295
+      ],
+      "wa_punct": [
+        -35.4345,
+        -10.9905
+      ],
+      "wa_attnM": [
+        -13.7214,
+        -9.1742
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 22,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -40.2278,
+      "base_margin": 11.726,
+      "ko_punct": [
+        5.862,
+        1.7385
+      ],
+      "ko_attnM": [
+        -14.0635,
+        -3.8141
+      ],
+      "wa_punct": [
+        -51.7223,
+        -16.5398
+      ],
+      "wa_attnM": [
+        -68.3436,
+        -15.8896
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 23,
+      "label": "Unknown",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.3165,
+      "base_margin": 4.5126,
+      "ko_punct": [
+        6.173,
+        -3.9414
+      ],
+      "ko_attnM": [
+        0.2171,
+        -5.3417
+      ],
+      "wa_punct": [
+        -10.2657,
+        -0.4006
+      ],
+      "wa_attnM": [
+        -0.074,
+        -1.6084
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 24,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.3321,
+      "base_margin": 7.1455,
+      "ko_punct": [
+        0.8378,
+        -0.4948
+      ],
+      "ko_attnM": [
+        -5.1915,
+        -7.8501
+      ],
+      "wa_punct": [
+        -6.1298,
+        -10.5909
+      ],
+      "wa_attnM": [
+        -10.0705,
+        -7.6702
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 25,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -58.2671,
+      "base_margin": 10.5182,
+      "ko_punct": [
+        11.2948,
+        1.3006
+      ],
+      "ko_attnM": [
+        -25.2118,
+        -20.8502
+      ],
+      "wa_punct": [
+        -43.8296,
+        -16.1837
+      ],
+      "wa_attnM": [
+        -42.0749,
+        -14.3562
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 27,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.1567,
+      "base_margin": 7.7139,
+      "ko_punct": [
+        -1.5497,
+        -2.539
+      ],
+      "ko_attnM": [
+        -17.012,
+        -5.7267
+      ],
+      "wa_punct": [
+        -4.0931,
+        -11.092
+      ],
+      "wa_attnM": [
+        -19.0812,
+        -8.9356
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 28,
+      "label": "False",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -42.8167,
+      "base_margin": 7.8825,
+      "ko_punct": [
+        -1.1408,
+        1.3856
+      ],
+      "ko_attnM": [
+        -43.2578,
+        -18.4681
+      ],
+      "wa_punct": [
+        -51.7839,
+        -13.3921
+      ],
+      "wa_attnM": [
+        -33.7971,
+        -15.4914
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 29,
+      "label": "Unknown",
+      "n_punct": 8,
+      "match_valid": "8/8",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.8512,
+      "base_margin": 1.4275,
+      "ko_punct": [
+        4.4261,
+        -1.1355
+      ],
+      "ko_attnM": [
+        -1.0501,
+        -5.8481
+      ],
+      "wa_punct": [
+        -25.4698,
+        2.3596
+      ],
+      "wa_attnM": [
+        -10.6651,
+        2.1557
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 30,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.9857,
+      "base_margin": 7.9894,
+      "ko_punct": [
+        2.4201,
+        -1.7463
+      ],
+      "ko_attnM": [
+        -11.7482,
+        -4.3639
+      ],
+      "wa_punct": [
+        -2.3622,
+        -11.4959
+      ],
+      "wa_attnM": [
+        -33.0556,
+        -10.3646
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 31,
+      "label": "False",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -49.8231,
+      "base_margin": 8.9471,
+      "ko_punct": [
+        6.4393,
+        1.8324
+      ],
+      "ko_attnM": [
+        -36.9799,
+        -17.3489
+      ],
+      "wa_punct": [
+        -41.186,
+        -14.6317
+      ],
+      "wa_attnM": [
+        -30.9096,
+        -13.786
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 33,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.842,
+      "base_margin": 7.797,
+      "ko_punct": [
+        4.4076,
+        -1.0652
+      ],
+      "ko_attnM": [
+        -11.2486,
+        -5.3313
+      ],
+      "wa_punct": [
+        13.3729,
+        -10.8963
+      ],
+      "wa_attnM": [
+        -25.2068,
+        -8.7883
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 34,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.6777,
+      "base_margin": 10.3727,
+      "ko_punct": [
+        6.8475,
+        1.8715
+      ],
+      "ko_attnM": [
+        1.8365,
+        0.894
+      ],
+      "wa_punct": [
+        -32.4542,
+        -15.7745
+      ],
+      "wa_attnM": [
+        -43.0235,
+        -14.8951
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 35,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -85.6295,
+      "base_margin": 4.0781,
+      "ko_punct": [
+        10.2586,
+        -2.9861
+      ],
+      "ko_attnM": [
+        5.8502,
+        0.9394
+      ],
+      "wa_punct": [
+        11.8256,
+        -0.2933
+      ],
+      "wa_attnM": [
+        -12.7417,
+        -2.9488
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 36,
+      "label": "True",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.1141,
+      "base_margin": 8.2183,
+      "ko_punct": [
+        1.2566,
+        -1.5037
+      ],
+      "ko_attnM": [
+        -10.9465,
+        -6.2214
+      ],
+      "wa_punct": [
+        -19.4457,
+        -11.995
+      ],
+      "wa_attnM": [
+        -28.0211,
+        -9.4567
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 37,
+      "label": "False",
+      "n_punct": 17,
+      "match_valid": "17/17",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -46.0658,
+      "base_margin": 10.7981,
+      "ko_punct": [
+        4.8922,
+        1.624
+      ],
+      "ko_attnM": [
+        -10.8987,
+        -0.627
+      ],
+      "wa_punct": [
+        -48.9719,
+        -15.9777
+      ],
+      "wa_attnM": [
+        -69.5889,
+        -14.8989
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 38,
+      "label": "Unknown",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -86.5352,
+      "base_margin": 5.5492,
+      "ko_punct": [
+        14.148,
+        -2.8016
+      ],
+      "ko_attnM": [
+        -10.5119,
+        0.0135
+      ],
+      "wa_punct": [
+        -14.9013,
+        -1.8839
+      ],
+      "wa_attnM": [
+        -21.7004,
+        -3.8906
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 39,
+      "label": "True",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.4873,
+      "base_margin": 7.8529,
+      "ko_punct": [
+        5.9868,
+        -1.7226
+      ],
+      "ko_attnM": [
+        -13.9482,
+        -6.181
+      ],
+      "wa_punct": [
+        -12.8935,
+        -11.6541
+      ],
+      "wa_attnM": [
+        -0.9926,
+        -8.453
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 40,
+      "label": "False",
+      "n_punct": 19,
+      "match_valid": "19/19",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.463,
+      "base_margin": 12.59,
+      "ko_punct": [
+        7.7497,
+        0.8107
+      ],
+      "ko_attnM": [
+        -8.8963,
+        -0.453
+      ],
+      "wa_punct": [
+        -22.3149,
+        -17.2678
+      ],
+      "wa_attnM": [
+        -37.2577,
+        -17.3501
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 41,
+      "label": "Unknown",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.3544,
+      "base_margin": 4.7966,
+      "ko_punct": [
+        2.9171,
+        -4.505
+      ],
+      "ko_attnM": [
+        -1.3325,
+        1.3583
+      ],
+      "wa_punct": [
+        0.3971,
+        -1.0917
+      ],
+      "wa_attnM": [
+        -3.2823,
+        -3.2332
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 42,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.1188,
+      "base_margin": 7.3978,
+      "ko_punct": [
+        4.9966,
+        -5.0941
+      ],
+      "ko_attnM": [
+        6.4127,
+        0.2629
+      ],
+      "wa_punct": [
+        -1.0545,
+        -11.1501
+      ],
+      "wa_attnM": [
+        -19.2233,
+        -8.1108
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 43,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -41.0992,
+      "base_margin": 10.3843,
+      "ko_punct": [
+        7.1652,
+        1.3589
+      ],
+      "ko_attnM": [
+        -9.1579,
+        -2.7847
+      ],
+      "wa_punct": [
+        -35.6227,
+        -14.7927
+      ],
+      "wa_attnM": [
+        -59.0475,
+        -14.1603
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 44,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.1614,
+      "base_margin": 5.3477,
+      "ko_punct": [
+        7.1138,
+        -3.0645
+      ],
+      "ko_attnM": [
+        -1.6742,
+        0.5341
+      ],
+      "wa_punct": [
+        -21.2667,
+        -1.6844
+      ],
+      "wa_attnM": [
+        -11.1641,
+        -4.5209
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 45,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -70.0115,
+      "base_margin": 7.2331,
+      "ko_punct": [
+        -0.1846,
+        -2.3575
+      ],
+      "ko_attnM": [
+        -6.2948,
+        -1.3615
+      ],
+      "wa_punct": [
+        -35.2144,
+        -11.0339
+      ],
+      "wa_attnM": [
+        -27.1251,
+        -8.6707
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 46,
+      "label": "False",
+      "n_punct": 20,
+      "match_valid": "20/20",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -42.7244,
+      "base_margin": 13.3546,
+      "ko_punct": [
+        5.3178,
+        0.3393
+      ],
+      "ko_attnM": [
+        -9.478,
+        -1.9065
+      ],
+      "wa_punct": [
+        -55.4732,
+        -18.6485
+      ],
+      "wa_attnM": [
+        -54.0962,
+        -17.4011
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 47,
+      "label": "Unknown",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.905,
+      "base_margin": 4.4471,
+      "ko_punct": [
+        -1.3276,
+        -3.6413
+      ],
+      "ko_attnM": [
+        2.4137,
+        -1.5019
+      ],
+      "wa_punct": [
+        5.0518,
+        -1.1129
+      ],
+      "wa_attnM": [
+        -38.6506,
+        -2.0781
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 48,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.5153,
+      "base_margin": 5.0239,
+      "ko_punct": [
+        3.6983,
+        -0.6196
+      ],
+      "ko_attnM": [
+        -0.2545,
+        0.7708
+      ],
+      "wa_punct": [
+        -9.9892,
+        -8.8572
+      ],
+      "wa_attnM": [
+        -20.926,
+        -7.5114
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 49,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -46.7507,
+      "base_margin": 12.6722,
+      "ko_punct": [
+        2.9753,
+        0.4637
+      ],
+      "ko_attnM": [
+        -9.1325,
+        -0.2211
+      ],
+      "wa_punct": [
+        -58.6936,
+        -18.6242
+      ],
+      "wa_attnM": [
+        -45.9111,
+        -17.0545
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 51,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.4778,
+      "base_margin": 7.4947,
+      "ko_punct": [
+        3.4139,
+        -1.5561
+      ],
+      "ko_attnM": [
+        -15.8556,
+        -5.5681
+      ],
+      "wa_punct": [
+        4.2126,
+        -10.6472
+      ],
+      "wa_attnM": [
+        -1.4589,
+        -7.985
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 52,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.5234,
+      "base_margin": 10.562,
+      "ko_punct": [
+        1.2766,
+        0.4739
+      ],
+      "ko_attnM": [
+        -47.3378,
+        -21.8648
+      ],
+      "wa_punct": [
+        -36.609,
+        -15.7863
+      ],
+      "wa_attnM": [
+        -58.6256,
+        -14.9356
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 54,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -75.5196,
+      "base_margin": 8.2358,
+      "ko_punct": [
+        2.9418,
+        -2.7184
+      ],
+      "ko_attnM": [
+        6.1399,
+        0.013
+      ],
+      "wa_punct": [
+        -3.6945,
+        -11.893
+      ],
+      "wa_attnM": [
+        28.2334,
+        -11.1673
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 55,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -46.9845,
+      "base_margin": 11.3503,
+      "ko_punct": [
+        3.5075,
+        1.4288
+      ],
+      "ko_attnM": [
+        -3.5959,
+        -0.8159
+      ],
+      "wa_punct": [
+        -38.3296,
+        -16.4713
+      ],
+      "wa_attnM": [
+        -34.8833,
+        -16.173
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 56,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -83.5995,
+      "base_margin": 4.3549,
+      "ko_punct": [
+        8.0452,
+        -3.7128
+      ],
+      "ko_attnM": [
+        -17.1233,
+        -2.492
+      ],
+      "wa_punct": [
+        -9.5014,
+        -0.0598
+      ],
+      "wa_attnM": [
+        -7.277,
+        -4.1733
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 57,
+      "label": "True",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -81.9106,
+      "base_margin": 7.0122,
+      "ko_punct": [
+        5.9162,
+        -1.6739
+      ],
+      "ko_attnM": [
+        -9.3376,
+        -5.4071
+      ],
+      "wa_punct": [
+        -4.9423,
+        -10.5734
+      ],
+      "wa_attnM": [
+        -8.4841,
+        -9.7132
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 58,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -47.6548,
+      "base_margin": 10.4307,
+      "ko_punct": [
+        6.775,
+        2.1802
+      ],
+      "ko_attnM": [
+        -11.7012,
+        -2.2231
+      ],
+      "wa_punct": [
+        -41.0301,
+        -16.1323
+      ],
+      "wa_attnM": [
+        -36.8358,
+        -15.7753
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 59,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -61.3749,
+      "base_margin": 5.8339,
+      "ko_punct": [
+        -4.5001,
+        -3.1261
+      ],
+      "ko_attnM": [
+        1.5434,
+        -0.2638
+      ],
+      "wa_punct": [
+        -44.0398,
+        -2.0857
+      ],
+      "wa_attnM": [
+        -38.9035,
+        -4.0677
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 60,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.3111,
+      "base_margin": 6.8443,
+      "ko_punct": [
+        0.6592,
+        -2.7547
+      ],
+      "ko_attnM": [
+        2.5772,
+        -1.0222
+      ],
+      "wa_punct": [
+        -18.4599,
+        -10.8874
+      ],
+      "wa_attnM": [
+        -32.5068,
+        -8.2587
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 61,
+      "label": "False",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -51.7952,
+      "base_margin": 8.6037,
+      "ko_punct": [
+        4.6197,
+        1.3934
+      ],
+      "ko_attnM": [
+        -39.8412,
+        -16.517
+      ],
+      "wa_punct": [
+        -3.6299,
+        -12.842
+      ],
+      "wa_attnM": [
+        -42.4217,
+        -13.201
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 62,
+      "label": "Unknown",
+      "n_punct": 17,
+      "match_valid": "17/17",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.205,
+      "base_margin": 6.0147,
+      "ko_punct": [
+        -6.8529,
+        -4.3502
+      ],
+      "ko_attnM": [
+        -11.6121,
+        -7.6677
+      ],
+      "wa_punct": [
+        -19.9463,
+        -2.277
+      ],
+      "wa_attnM": [
+        -39.53,
+        -2.5416
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 63,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -68.7275,
+      "base_margin": 7.6685,
+      "ko_punct": [
+        5.9505,
+        -1.2436
+      ],
+      "ko_attnM": [
+        -9.6338,
+        -7.4769
+      ],
+      "wa_punct": [
+        6.1258,
+        -10.6869
+      ],
+      "wa_attnM": [
+        -26.6029,
+        -10.1988
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 64,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -43.8155,
+      "base_margin": 11.0561,
+      "ko_punct": [
+        1.2048,
+        1.649
+      ],
+      "ko_attnM": [
+        -7.2713,
+        -1.9014
+      ],
+      "wa_punct": [
+        -46.3235,
+        -16.7991
+      ],
+      "wa_attnM": [
+        -46.2486,
+        -14.7269
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 66,
+      "label": "True",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.559,
+      "base_margin": 7.5593,
+      "ko_punct": [
+        0.7906,
+        -2.454
+      ],
+      "ko_attnM": [
+        0.249,
+        -1.0625
+      ],
+      "wa_punct": [
+        -14.3299,
+        -11.5814
+      ],
+      "wa_attnM": [
+        -18.1096,
+        -11.3134
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 67,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -51.0833,
+      "base_margin": 10.1032,
+      "ko_punct": [
+        8.5174,
+        1.0158
+      ],
+      "ko_attnM": [
+        -34.1408,
+        -17.7912
+      ],
+      "wa_punct": [
+        -49.0784,
+        -15.5755
+      ],
+      "wa_attnM": [
+        -37.4148,
+        -14.8245
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 69,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.3996,
+      "base_margin": 7.2952,
+      "ko_punct": [
+        1.5448,
+        -2.1721
+      ],
+      "ko_attnM": [
+        -15.0639,
+        -6.0015
+      ],
+      "wa_punct": [
+        -22.0075,
+        -10.977
+      ],
+      "wa_attnM": [
+        -27.5143,
+        -8.6217
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 70,
+      "label": "False",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.6479,
+      "base_margin": 9.6697,
+      "ko_punct": [
+        7.5995,
+        1.8909
+      ],
+      "ko_attnM": [
+        -48.2429,
+        -20.1183
+      ],
+      "wa_punct": [
+        -7.2844,
+        -13.98
+      ],
+      "wa_attnM": [
+        -32.6989,
+        -13.7078
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 71,
+      "label": "Unknown",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -86.0518,
+      "base_margin": 4.3975,
+      "ko_punct": [
+        11.2927,
+        -3.5338
+      ],
+      "ko_attnM": [
+        -8.5906,
+        -1.2972
+      ],
+      "wa_punct": [
+        0.528,
+        -0.5301
+      ],
+      "wa_attnM": [
+        -17.8104,
+        -2.138
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 72,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -77.1782,
+      "base_margin": 7.4125,
+      "ko_punct": [
+        -0.4123,
+        -2.6263
+      ],
+      "ko_attnM": [
+        -5.319,
+        -5.6644
+      ],
+      "wa_punct": [
+        -17.7294,
+        -11.4118
+      ],
+      "wa_attnM": [
+        -36.3264,
+        -8.1125
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 73,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.6524,
+      "base_margin": 11.0762,
+      "ko_punct": [
+        6.6404,
+        1.4197
+      ],
+      "ko_attnM": [
+        -38.8945,
+        -18.1361
+      ],
+      "wa_punct": [
+        -35.7643,
+        -16.4801
+      ],
+      "wa_attnM": [
+        -47.5338,
+        -15.7942
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 74,
+      "label": "Unknown",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.8802,
+      "base_margin": 6.7086,
+      "ko_punct": [
+        -1.1255,
+        -3.8872
+      ],
+      "ko_attnM": [
+        -15.8094,
+        -5.377
+      ],
+      "wa_punct": [
+        -18.6298,
+        -2.4194
+      ],
+      "wa_attnM": [
+        -26.9321,
+        -5.686
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 75,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.1155,
+      "base_margin": 6.8328,
+      "ko_punct": [
+        0.5771,
+        -2.8715
+      ],
+      "ko_attnM": [
+        1.5376,
+        -0.2926
+      ],
+      "wa_punct": [
+        -16.6192,
+        -11.101
+      ],
+      "wa_attnM": [
+        -19.9883,
+        -9.5022
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 76,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -49.2276,
+      "base_margin": 8.865,
+      "ko_punct": [
+        1.673,
+        1.3715
+      ],
+      "ko_attnM": [
+        -0.8979,
+        0.5106
+      ],
+      "wa_punct": [
+        -43.5029,
+        -14.6531
+      ],
+      "wa_attnM": [
+        -53.2859,
+        -16.7361
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 77,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.5295,
+      "base_margin": 4.3573,
+      "ko_punct": [
+        4.7035,
+        -0.9975
+      ],
+      "ko_attnM": [
+        -4.0582,
+        1.9838
+      ],
+      "wa_punct": [
+        -17.804,
+        -0.4534
+      ],
+      "wa_attnM": [
+        12.6689,
+        -3.7926
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 78,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.304,
+      "base_margin": 8.0314,
+      "ko_punct": [
+        2.6462,
+        -1.8709
+      ],
+      "ko_attnM": [
+        -4.2267,
+        -5.4553
+      ],
+      "wa_punct": [
+        14.6203,
+        -11.1101
+      ],
+      "wa_attnM": [
+        -14.1721,
+        -10.3831
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 79,
+      "label": "False",
+      "n_punct": 17,
+      "match_valid": "17/17",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.0482,
+      "base_margin": 12.071,
+      "ko_punct": [
+        8.3268,
+        1.5426
+      ],
+      "ko_attnM": [
+        -43.4857,
+        -25.4651
+      ],
+      "wa_punct": [
+        -49.8461,
+        -17.6633
+      ],
+      "wa_attnM": [
+        -48.657,
+        -16.6877
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 80,
+      "label": "Unknown",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.3986,
+      "base_margin": 3.7667,
+      "ko_punct": [
+        0.4774,
+        -5.0742
+      ],
+      "ko_attnM": [
+        -2.1332,
+        0.7129
+      ],
+      "wa_punct": [
+        -0.819,
+        0.263
+      ],
+      "wa_attnM": [
+        -13.6254,
+        -2.6705
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 81,
+      "label": "True",
+      "n_punct": 8,
+      "match_valid": "8/8",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.3729,
+      "base_margin": 7.8255,
+      "ko_punct": [
+        3.5801,
+        -1.2373
+      ],
+      "ko_attnM": [
+        -2.124,
+        -4.4368
+      ],
+      "wa_punct": [
+        -27.2285,
+        -11.0262
+      ],
+      "wa_attnM": [
+        -6.4831,
+        -10.0861
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 82,
+      "label": "False",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.6684,
+      "base_margin": 9.3059,
+      "ko_punct": [
+        10.6827,
+        0.8004
+      ],
+      "ko_attnM": [
+        -30.2629,
+        -17.1321
+      ],
+      "wa_punct": [
+        -27.8491,
+        -14.9642
+      ],
+      "wa_attnM": [
+        -24.0816,
+        -13.0407
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 83,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -81.1634,
+      "base_margin": 3.5178,
+      "ko_punct": [
+        4.3486,
+        -4.0531
+      ],
+      "ko_attnM": [
+        -2.0267,
+        -2.7332
+      ],
+      "wa_punct": [
+        -5.6047,
+        0.3428
+      ],
+      "wa_attnM": [
+        8.5834,
+        -3.1022
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 84,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.4202,
+      "base_margin": 7.484,
+      "ko_punct": [
+        4.9286,
+        -0.6492
+      ],
+      "ko_attnM": [
+        -11.6602,
+        -3.924
+      ],
+      "wa_punct": [
+        3.554,
+        -10.9097
+      ],
+      "wa_attnM": [
+        -17.1568,
+        -9.1838
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 85,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -45.7533,
+      "base_margin": 12.529,
+      "ko_punct": [
+        6.3128,
+        1.3406
+      ],
+      "ko_attnM": [
+        3.2741,
+        -4.6842
+      ],
+      "wa_punct": [
+        -11.1323,
+        -16.7023
+      ],
+      "wa_attnM": [
+        -51.894,
+        -17.2645
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 86,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.1939,
+      "base_margin": 6.3109,
+      "ko_punct": [
+        -1.1523,
+        -1.4952
+      ],
+      "ko_attnM": [
+        -7.7668,
+        -8.9042
+      ],
+      "wa_punct": [
+        -28.281,
+        -2.3629
+      ],
+      "wa_attnM": [
+        -15.0037,
+        -5.0309
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 87,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.013,
+      "base_margin": 6.7599,
+      "ko_punct": [
+        3.4266,
+        -1.3973
+      ],
+      "ko_attnM": [
+        -6.2748,
+        -4.5541
+      ],
+      "wa_punct": [
+        -23.2542,
+        -10.8853
+      ],
+      "wa_attnM": [
+        -3.5948,
+        -8.2279
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 88,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -42.2499,
+      "base_margin": 11.3132,
+      "ko_punct": [
+        7.4386,
+        1.619
+      ],
+      "ko_attnM": [
+        -41.9202,
+        -18.6628
+      ],
+      "wa_punct": [
+        -40.97,
+        -16.8889
+      ],
+      "wa_attnM": [
+        -31.6824,
+        -16.6496
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 89,
+      "label": "Unknown",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.894,
+      "base_margin": 0.8511,
+      "ko_punct": [
+        2.5033,
+        -1.5921
+      ],
+      "ko_attnM": [
+        -2.368,
+        3.815
+      ],
+      "wa_punct": [
+        -2.8428,
+        2.8205
+      ],
+      "wa_attnM": [
+        -44.7573,
+        2.2127
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 90,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.4988,
+      "base_margin": 6.4809,
+      "ko_punct": [
+        2.4258,
+        -1.8099
+      ],
+      "ko_attnM": [
+        5.5984,
+        -1.9632
+      ],
+      "wa_punct": [
+        -22.367,
+        -10.6077
+      ],
+      "wa_attnM": [
+        -17.3645,
+        -8.4691
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 91,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -51.1658,
+      "base_margin": 9.8686,
+      "ko_punct": [
+        10.4747,
+        2.2258
+      ],
+      "ko_attnM": [
+        -7.6703,
+        0.6605
+      ],
+      "wa_punct": [
+        -52.6595,
+        -15.3771
+      ],
+      "wa_attnM": [
+        -35.3436,
+        -13.9228
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 92,
+      "label": "Unknown",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.7615,
+      "base_margin": 6.7824,
+      "ko_punct": [
+        7.1514,
+        -3.4726
+      ],
+      "ko_attnM": [
+        -4.3833,
+        0.1352
+      ],
+      "wa_punct": [
+        8.3707,
+        -3.6103
+      ],
+      "wa_attnM": [
+        4.9165,
+        -5.6368
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 93,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.8203,
+      "base_margin": 6.7464,
+      "ko_punct": [
+        3.1605,
+        -2.4922
+      ],
+      "ko_attnM": [
+        -15.5275,
+        -9.5818
+      ],
+      "wa_punct": [
+        -32.0487,
+        -10.9893
+      ],
+      "wa_attnM": [
+        -36.5323,
+        -9.5154
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 94,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -59.048,
+      "base_margin": 8.9843,
+      "ko_punct": [
+        4.6612,
+        1.8588
+      ],
+      "ko_attnM": [
+        0.2324,
+        0.1368
+      ],
+      "wa_punct": [
+        -6.922,
+        -14.0166
+      ],
+      "wa_attnM": [
+        -35.7682,
+        -13.2946
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 96,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -68.8123,
+      "base_margin": 7.6549,
+      "ko_punct": [
+        2.867,
+        -1.0162
+      ],
+      "ko_attnM": [
+        -13.8343,
+        -5.3706
+      ],
+      "wa_punct": [
+        -12.2636,
+        -11.3589
+      ],
+      "wa_attnM": [
+        -21.0683,
+        -10.4444
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 97,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -41.3568,
+      "base_margin": 11.3525,
+      "ko_punct": [
+        5.6271,
+        0.8794
+      ],
+      "ko_attnM": [
+        -2.0657,
+        -2.3537
+      ],
+      "wa_punct": [
+        -30.1403,
+        -16.3548
+      ],
+      "wa_attnM": [
+        -51.6522,
+        -15.7325
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 98,
+      "label": "Unknown",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -83.931,
+      "base_margin": 4.8319,
+      "ko_punct": [
+        3.2917,
+        -2.2811
+      ],
+      "ko_attnM": [
+        -8.5962,
+        -0.4556
+      ],
+      "wa_punct": [
+        -0.2038,
+        -0.9221
+      ],
+      "wa_attnM": [
+        -24.8932,
+        -2.3928
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 99,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.2173,
+      "base_margin": 6.4365,
+      "ko_punct": [
+        9.4697,
+        -2.677
+      ],
+      "ko_attnM": [
+        2.7847,
+        -1.2173
+      ],
+      "wa_punct": [
+        -19.4673,
+        -10.3849
+      ],
+      "wa_attnM": [
+        2.2103,
+        -8.4952
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 100,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -46.3809,
+      "base_margin": 10.2868,
+      "ko_punct": [
+        3.6682,
+        1.6219
+      ],
+      "ko_attnM": [
+        -15.2597,
+        -1.6002
+      ],
+      "wa_punct": [
+        -44.1464,
+        -16.3375
+      ],
+      "wa_attnM": [
+        -44.0588,
+        -15.2146
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 101,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.9811,
+      "base_margin": 5.6014,
+      "ko_punct": [
+        9.2107,
+        -3.0324
+      ],
+      "ko_attnM": [
+        -2.9966,
+        -0.3778
+      ],
+      "wa_punct": [
+        -14.8931,
+        -1.9995
+      ],
+      "wa_attnM": [
+        -33.9314,
+        -3.8714
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 102,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -74.5888,
+      "base_margin": 7.3153,
+      "ko_punct": [
+        3.7932,
+        -0.7692
+      ],
+      "ko_attnM": [
+        -19.5516,
+        -11.0839
+      ],
+      "wa_punct": [
+        -11.6052,
+        -11.5005
+      ],
+      "wa_attnM": [
+        -18.3229,
+        -11.0045
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 103,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -31.5059,
+      "base_margin": 11.1947,
+      "ko_punct": [
+        3.8135,
+        1.6718
+      ],
+      "ko_attnM": [
+        -18.644,
+        -3.8353
+      ],
+      "wa_punct": [
+        -79.2417,
+        -16.59
+      ],
+      "wa_attnM": [
+        -72.4291,
+        -15.2876
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 104,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -66.4537,
+      "base_margin": 3.7057,
+      "ko_punct": [
+        -1.8936,
+        -1.8703
+      ],
+      "ko_attnM": [
+        -8.6368,
+        -0.5939
+      ],
+      "wa_punct": [
+        -17.3107,
+        0.2683
+      ],
+      "wa_attnM": [
+        -27.5007,
+        -1.5283
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 105,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.0724,
+      "base_margin": 6.904,
+      "ko_punct": [
+        2.3716,
+        -1.1753
+      ],
+      "ko_attnM": [
+        -14.4285,
+        -5.1818
+      ],
+      "wa_punct": [
+        -14.4926,
+        -10.823
+      ],
+      "wa_attnM": [
+        -27.8436,
+        -7.6483
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 106,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -54.8069,
+      "base_margin": 10.7361,
+      "ko_punct": [
+        4.984,
+        -0.0119
+      ],
+      "ko_attnM": [
+        -1.5867,
+        -0.0469
+      ],
+      "wa_punct": [
+        -15.9251,
+        -15.3343
+      ],
+      "wa_attnM": [
+        -40.5506,
+        -15.2786
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 107,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -77.9191,
+      "base_margin": 6.4746,
+      "ko_punct": [
+        7.2004,
+        -3.4275
+      ],
+      "ko_attnM": [
+        -4.1994,
+        0.5129
+      ],
+      "wa_punct": [
+        7.3988,
+        -2.9336
+      ],
+      "wa_attnM": [
+        -16.4495,
+        -4.0962
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 108,
+      "label": "True",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.6882,
+      "base_margin": 8.2058,
+      "ko_punct": [
+        4.3028,
+        -2.0802
+      ],
+      "ko_attnM": [
+        -12.5758,
+        -7.0537
+      ],
+      "wa_punct": [
+        3.9415,
+        -11.7143
+      ],
+      "wa_attnM": [
+        -6.9485,
+        -8.468
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 109,
+      "label": "False",
+      "n_punct": 17,
+      "match_valid": "17/17",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -43.9325,
+      "base_margin": 10.6622,
+      "ko_punct": [
+        5.8641,
+        1.697
+      ],
+      "ko_attnM": [
+        -6.8773,
+        -3.9343
+      ],
+      "wa_punct": [
+        -60.1891,
+        -16.1245
+      ],
+      "wa_attnM": [
+        -56.5711,
+        -13.576
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 110,
+      "label": "Unknown",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.1078,
+      "base_margin": 5.5935,
+      "ko_punct": [
+        2.4535,
+        -3.0537
+      ],
+      "ko_attnM": [
+        -7.9614,
+        0.7519
+      ],
+      "wa_punct": [
+        -4.2919,
+        -1.8195
+      ],
+      "wa_attnM": [
+        10.2252,
+        -4.7749
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 111,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.6098,
+      "base_margin": 7.8725,
+      "ko_punct": [
+        0.8113,
+        -1.7722
+      ],
+      "ko_attnM": [
+        -9.8719,
+        -5.8142
+      ],
+      "wa_punct": [
+        -14.0824,
+        -11.8228
+      ],
+      "wa_attnM": [
+        -24.165,
+        -12.1075
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 112,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -45.8676,
+      "base_margin": 11.6177,
+      "ko_punct": [
+        6.1006,
+        1.7651
+      ],
+      "ko_attnM": [
+        -3.0466,
+        -1.5978
+      ],
+      "wa_punct": [
+        -56.6125,
+        -17.4618
+      ],
+      "wa_attnM": [
+        -41.8908,
+        -15.2875
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 114,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -62.0201,
+      "base_margin": 6.9754,
+      "ko_punct": [
+        -0.7096,
+        -0.7681
+      ],
+      "ko_attnM": [
+        -12.2496,
+        -6.3872
+      ],
+      "wa_punct": [
+        -25.4894,
+        -10.7203
+      ],
+      "wa_attnM": [
+        -25.0837,
+        -7.799
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 115,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -43.801,
+      "base_margin": 8.9496,
+      "ko_punct": [
+        4.1184,
+        1.6088
+      ],
+      "ko_attnM": [
+        -38.8989,
+        -17.5137
+      ],
+      "wa_punct": [
+        -56.2613,
+        -14.2286
+      ],
+      "wa_attnM": [
+        -43.6519,
+        -13.6066
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 116,
+      "label": "Unknown",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.557,
+      "base_margin": 4.4986,
+      "ko_punct": [
+        -5.0907,
+        -3.6981
+      ],
+      "ko_attnM": [
+        -0.7627,
+        0.612
+      ],
+      "wa_punct": [
+        -34.6404,
+        -0.8589
+      ],
+      "wa_attnM": [
+        -35.9225,
+        -2.6772
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 117,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -77.31,
+      "base_margin": 6.9443,
+      "ko_punct": [
+        4.2379,
+        -1.3585
+      ],
+      "ko_attnM": [
+        -2.7353,
+        -4.1445
+      ],
+      "wa_punct": [
+        -27.1676,
+        -11.1482
+      ],
+      "wa_attnM": [
+        -0.3694,
+        -8.6008
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 118,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -47.2813,
+      "base_margin": 13.4018,
+      "ko_punct": [
+        1.4835,
+        -1.0512
+      ],
+      "ko_attnM": [
+        4.8791,
+        -0.9739
+      ],
+      "wa_punct": [
+        -44.9724,
+        -18.6366
+      ],
+      "wa_attnM": [
+        -60.262,
+        -16.8616
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 119,
+      "label": "Unknown",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -65.3443,
+      "base_margin": 5.9757,
+      "ko_punct": [
+        -2.5572,
+        -4.1278
+      ],
+      "ko_attnM": [
+        -5.8721,
+        -0.3737
+      ],
+      "wa_punct": [
+        -17.8049,
+        -2.3961
+      ],
+      "wa_attnM": [
+        -54.6611,
+        -4.7764
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 120,
+      "label": "True",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.0909,
+      "base_margin": 7.0013,
+      "ko_punct": [
+        4.943,
+        -2.7824
+      ],
+      "ko_attnM": [
+        -8.3458,
+        -6.535
+      ],
+      "wa_punct": [
+        -13.4631,
+        -10.7616
+      ],
+      "wa_attnM": [
+        -21.4743,
+        -8.7864
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 121,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -45.0924,
+      "base_margin": 11.4756,
+      "ko_punct": [
+        1.671,
+        1.1408
+      ],
+      "ko_attnM": [
+        -0.0523,
+        -1.5975
+      ],
+      "wa_punct": [
+        -40.6145,
+        -17.1243
+      ],
+      "wa_attnM": [
+        -31.5679,
+        -16.1049
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 123,
+      "label": "True",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.9017,
+      "base_margin": 7.9611,
+      "ko_punct": [
+        3.8702,
+        -1.458
+      ],
+      "ko_attnM": [
+        -8.4047,
+        -7.0972
+      ],
+      "wa_punct": [
+        10.4507,
+        -11.366
+      ],
+      "wa_attnM": [
+        -21.7847,
+        -8.6084
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 124,
+      "label": "False",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.4377,
+      "base_margin": 9.2495,
+      "ko_punct": [
+        3.3178,
+        1.1231
+      ],
+      "ko_attnM": [
+        -42.9595,
+        -18.2763
+      ],
+      "wa_punct": [
+        -32.7479,
+        -14.7543
+      ],
+      "wa_attnM": [
+        -40.4039,
+        -16.7569
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 125,
+      "label": "Unknown",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.6282,
+      "base_margin": 5.2858,
+      "ko_punct": [
+        1.1329,
+        -3.8797
+      ],
+      "ko_attnM": [
+        -4.3826,
+        1.0313
+      ],
+      "wa_punct": [
+        -14.7589,
+        -1.4387
+      ],
+      "wa_attnM": [
+        -16.9497,
+        -2.8281
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 126,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.8993,
+      "base_margin": 7.6119,
+      "ko_punct": [
+        1.3806,
+        -2.5655
+      ],
+      "ko_attnM": [
+        -9.6719,
+        -12.1997
+      ],
+      "wa_punct": [
+        -27.4884,
+        -11.3793
+      ],
+      "wa_attnM": [
+        -25.9863,
+        -10.0944
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 127,
+      "label": "False",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -49.4057,
+      "base_margin": 9.69,
+      "ko_punct": [
+        7.604,
+        2.077
+      ],
+      "ko_attnM": [
+        -34.6594,
+        -17.5807
+      ],
+      "wa_punct": [
+        -34.1097,
+        -15.2832
+      ],
+      "wa_attnM": [
+        -35.9852,
+        -14.1826
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 129,
+      "label": "True",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -66.8801,
+      "base_margin": 7.7428,
+      "ko_punct": [
+        0.4972,
+        -1.7881
+      ],
+      "ko_attnM": [
+        -19.3389,
+        -6.4544
+      ],
+      "wa_punct": [
+        -14.4396,
+        -11.3739
+      ],
+      "wa_attnM": [
+        -9.2786,
+        -9.1562
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 130,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -47.744,
+      "base_margin": 10.6657,
+      "ko_punct": [
+        4.351,
+        1.3243
+      ],
+      "ko_attnM": [
+        -38.7022,
+        -21.614
+      ],
+      "wa_punct": [
+        -36.5535,
+        -16.4353
+      ],
+      "wa_attnM": [
+        -48.7623,
+        -15.707
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 131,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.1865,
+      "base_margin": 5.3776,
+      "ko_punct": [
+        6.0734,
+        -2.8825
+      ],
+      "ko_attnM": [
+        -7.058,
+        1.0785
+      ],
+      "wa_punct": [
+        -8.5987,
+        -1.5652
+      ],
+      "wa_attnM": [
+        -2.242,
+        -3.6226
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 132,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.6649,
+      "base_margin": 7.4532,
+      "ko_punct": [
+        -3.2249,
+        -4.245
+      ],
+      "ko_attnM": [
+        -15.724,
+        -10.4263
+      ],
+      "wa_punct": [
+        -19.7764,
+        -11.2614
+      ],
+      "wa_attnM": [
+        -28.1909,
+        -9.673
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 133,
+      "label": "False",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -41.942,
+      "base_margin": 9.3893,
+      "ko_punct": [
+        1.1439,
+        0.4867
+      ],
+      "ko_attnM": [
+        -37.434,
+        -16.8465
+      ],
+      "wa_punct": [
+        -56.1869,
+        -15.3609
+      ],
+      "wa_attnM": [
+        -38.7872,
+        -13.4662
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 135,
+      "label": "True",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.063,
+      "base_margin": 8.0471,
+      "ko_punct": [
+        1.4004,
+        -1.993
+      ],
+      "ko_attnM": [
+        -8.7631,
+        -4.5149
+      ],
+      "wa_punct": [
+        -27.1254,
+        -11.6805
+      ],
+      "wa_attnM": [
+        -48.3953,
+        -11.6998
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 136,
+      "label": "False",
+      "n_punct": 20,
+      "match_valid": "20/20",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -43.6746,
+      "base_margin": 13.121,
+      "ko_punct": [
+        9.285,
+        1.6482
+      ],
+      "ko_attnM": [
+        -4.9452,
+        -2.3746
+      ],
+      "wa_punct": [
+        -75.6353,
+        -18.5833
+      ],
+      "wa_attnM": [
+        -77.762,
+        -16.7406
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 137,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.9248,
+      "base_margin": 0.2149,
+      "ko_punct": [
+        4.4369,
+        -2.9434
+      ],
+      "ko_attnM": [
+        -8.0354,
+        -3.9165
+      ],
+      "wa_punct": [
+        6.7466,
+        3.1094
+      ],
+      "wa_attnM": [
+        20.2399,
+        3.5658
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 138,
+      "label": "True",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.7487,
+      "base_margin": 8.3462,
+      "ko_punct": [
+        1.5995,
+        -2.3699
+      ],
+      "ko_attnM": [
+        -18.9887,
+        -8.62
+      ],
+      "wa_punct": [
+        -18.8888,
+        -11.9242
+      ],
+      "wa_attnM": [
+        -43.6622,
+        -13.2913
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 139,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.1521,
+      "base_margin": 9.9451,
+      "ko_punct": [
+        4.4034,
+        0.9312
+      ],
+      "ko_attnM": [
+        -47.313,
+        -23.3993
+      ],
+      "wa_punct": [
+        -36.7283,
+        -15.8611
+      ],
+      "wa_attnM": [
+        -38.8567,
+        -16.0138
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 140,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -83.9064,
+      "base_margin": 7.9893,
+      "ko_punct": [
+        5.2899,
+        -3.3602
+      ],
+      "ko_attnM": [
+        -8.3381,
+        -0.2529
+      ],
+      "wa_punct": [
+        15.8564,
+        -4.4386
+      ],
+      "wa_attnM": [
+        10.4816,
+        -6.5038
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 141,
+      "label": "True",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -77.2708,
+      "base_margin": 7.9395,
+      "ko_punct": [
+        2.7267,
+        -1.9064
+      ],
+      "ko_attnM": [
+        -6.2612,
+        -4.0727
+      ],
+      "wa_punct": [
+        10.5914,
+        -11.3937
+      ],
+      "wa_attnM": [
+        6.3789,
+        -7.9391
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 142,
+      "label": "False",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -49.698,
+      "base_margin": 8.843,
+      "ko_punct": [
+        6.2634,
+        1.5227
+      ],
+      "ko_attnM": [
+        -41.3559,
+        -17.6475
+      ],
+      "wa_punct": [
+        -18.9615,
+        -13.8677
+      ],
+      "wa_attnM": [
+        8.7225,
+        -15.8186
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 144,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.9708,
+      "base_margin": 7.8517,
+      "ko_punct": [
+        1.2495,
+        -2.75
+      ],
+      "ko_attnM": [
+        -10.3354,
+        -6.5165
+      ],
+      "wa_punct": [
+        -33.298,
+        -11.7446
+      ],
+      "wa_attnM": [
+        -28.1134,
+        -9.2847
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 145,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -43.3002,
+      "base_margin": 9.9847,
+      "ko_punct": [
+        3.9462,
+        1.5187
+      ],
+      "ko_attnM": [
+        -43.9022,
+        -17.6099
+      ],
+      "wa_punct": [
+        -54.9896,
+        -15.682
+      ],
+      "wa_attnM": [
+        -42.754,
+        -15.6114
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 146,
+      "label": "Unknown",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -72.1319,
+      "base_margin": 6.5337,
+      "ko_punct": [
+        2.3805,
+        -3.4401
+      ],
+      "ko_attnM": [
+        -2.4545,
+        0.4406
+      ],
+      "wa_punct": [
+        -26.3149,
+        -2.3646
+      ],
+      "wa_attnM": [
+        -6.4428,
+        -5.5988
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 147,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.5306,
+      "base_margin": 7.6946,
+      "ko_punct": [
+        2.1255,
+        -1.1976
+      ],
+      "ko_attnM": [
+        -2.8951,
+        -0.9265
+      ],
+      "wa_punct": [
+        -27.2172,
+        -11.472
+      ],
+      "wa_attnM": [
+        -11.7905,
+        -8.4892
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 148,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.3105,
+      "base_margin": 11.0978,
+      "ko_punct": [
+        4.8185,
+        0.5796
+      ],
+      "ko_attnM": [
+        -5.008,
+        -1.3431
+      ],
+      "wa_punct": [
+        -42.9186,
+        -16.6045
+      ],
+      "wa_attnM": [
+        -35.0278,
+        -14.3993
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 150,
+      "label": "True",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.4698,
+      "base_margin": 7.3519,
+      "ko_punct": [
+        4.0944,
+        -3.1385
+      ],
+      "ko_attnM": [
+        -8.2169,
+        -12.2253
+      ],
+      "wa_punct": [
+        -7.7269,
+        -11.2757
+      ],
+      "wa_attnM": [
+        -5.9246,
+        -10.1501
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 151,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.7028,
+      "base_margin": 11.312,
+      "ko_punct": [
+        -3.6145,
+        -0.9167
+      ],
+      "ko_attnM": [
+        -41.8536,
+        -21.4381
+      ],
+      "wa_punct": [
+        -57.2857,
+        -17.3823
+      ],
+      "wa_attnM": [
+        -41.5524,
+        -15.6943
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 153,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -79.2436,
+      "base_margin": 4.5107,
+      "ko_punct": [
+        5.7995,
+        -1.4238
+      ],
+      "ko_attnM": [
+        3.5894,
+        0.8922
+      ],
+      "wa_punct": [
+        -25.6838,
+        -8.4178
+      ],
+      "wa_attnM": [
+        -25.96,
+        -5.9086
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 154,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.0027,
+      "base_margin": 9.9385,
+      "ko_punct": [
+        8.3527,
+        1.4772
+      ],
+      "ko_attnM": [
+        -38.1376,
+        -17.5595
+      ],
+      "wa_punct": [
+        -21.3419,
+        -15.0829
+      ],
+      "wa_attnM": [
+        -39.3761,
+        -15.0505
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 155,
+      "label": "Unknown",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -78.8199,
+      "base_margin": 4.5657,
+      "ko_punct": [
+        8.2901,
+        -2.2772
+      ],
+      "ko_attnM": [
+        2.4056,
+        0.0973
+      ],
+      "wa_punct": [
+        -22.4465,
+        -0.9183
+      ],
+      "wa_attnM": [
+        1.03,
+        -3.3966
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 156,
+      "label": "True",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.9705,
+      "base_margin": 7.3254,
+      "ko_punct": [
+        -0.111,
+        -1.5361
+      ],
+      "ko_attnM": [
+        -13.7339,
+        -4.2914
+      ],
+      "wa_punct": [
+        -11.6058,
+        -11.1009
+      ],
+      "wa_attnM": [
+        -16.0852,
+        -11.8064
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 157,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -47.287,
+      "base_margin": 11.5173,
+      "ko_punct": [
+        2.6493,
+        0.7614
+      ],
+      "ko_attnM": [
+        -34.008,
+        -19.3344
+      ],
+      "wa_punct": [
+        -29.7595,
+        -16.4743
+      ],
+      "wa_attnM": [
+        -37.1194,
+        -17.7068
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 158,
+      "label": "Unknown",
+      "n_punct": 10,
+      "match_valid": "10/10",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -82.1386,
+      "base_margin": 4.2913,
+      "ko_punct": [
+        5.5689,
+        -3.2206
+      ],
+      "ko_attnM": [
+        -10.9922,
+        -9.5249
+      ],
+      "wa_punct": [
+        -18.737,
+        -0.8108
+      ],
+      "wa_attnM": [
+        -19.8432,
+        -3.2405
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 159,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.8955,
+      "base_margin": 7.5344,
+      "ko_punct": [
+        6.4295,
+        -0.8215
+      ],
+      "ko_attnM": [
+        -5.772,
+        -8.2211
+      ],
+      "wa_punct": [
+        3.021,
+        -11.095
+      ],
+      "wa_attnM": [
+        -20.5016,
+        -11.3
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 160,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -50.2417,
+      "base_margin": 9.3646,
+      "ko_punct": [
+        8.1578,
+        1.2378
+      ],
+      "ko_attnM": [
+        -35.1851,
+        -17.7944
+      ],
+      "wa_punct": [
+        -28.9898,
+        -14.8367
+      ],
+      "wa_attnM": [
+        -39.1251,
+        -13.5711
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 161,
+      "label": "Unknown",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -83.7508,
+      "base_margin": 0.2791,
+      "ko_punct": [
+        10.1578,
+        -2.761
+      ],
+      "ko_attnM": [
+        -2.8692,
+        4.2692
+      ],
+      "wa_punct": [
+        -14.3741,
+        3.6003
+      ],
+      "wa_attnM": [
+        -24.3596,
+        2.0004
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 162,
+      "label": "True",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -69.614,
+      "base_margin": 7.1877,
+      "ko_punct": [
+        -3.4262,
+        -2.643
+      ],
+      "ko_attnM": [
+        -7.5708,
+        -6.2988
+      ],
+      "wa_punct": [
+        -12.9192,
+        -10.8653
+      ],
+      "wa_attnM": [
+        -34.4433,
+        -8.0587
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 163,
+      "label": "False",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -48.2074,
+      "base_margin": 11.7113,
+      "ko_punct": [
+        5.1037,
+        1.129
+      ],
+      "ko_attnM": [
+        -1.3726,
+        -2.6348
+      ],
+      "wa_punct": [
+        -50.7067,
+        -17.3516
+      ],
+      "wa_attnM": [
+        -39.5843,
+        -17.4255
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 164,
+      "label": "Unknown",
+      "n_punct": 11,
+      "match_valid": "11/11",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.0279,
+      "base_margin": 7.1667,
+      "ko_punct": [
+        8.5793,
+        -5.2115
+      ],
+      "ko_attnM": [
+        -0.127,
+        -8.1257
+      ],
+      "wa_punct": [
+        -11.2259,
+        -3.6561
+      ],
+      "wa_attnM": [
+        -19.8015,
+        -5.4966
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 165,
+      "label": "True",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -75.3178,
+      "base_margin": 6.9554,
+      "ko_punct": [
+        4.1602,
+        -2.4993
+      ],
+      "ko_attnM": [
+        -3.0978,
+        -2.0339
+      ],
+      "wa_punct": [
+        -18.4268,
+        -10.7365
+      ],
+      "wa_attnM": [
+        -22.1754,
+        -10.3494
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 166,
+      "label": "False",
+      "n_punct": 18,
+      "match_valid": "18/18",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -54.0022,
+      "base_margin": 11.8327,
+      "ko_punct": [
+        4.3622,
+        1.3457
+      ],
+      "ko_attnM": [
+        -14.0655,
+        -1.4607
+      ],
+      "wa_punct": [
+        -47.0904,
+        -17.6196
+      ],
+      "wa_attnM": [
+        -73.3359,
+        -16.1059
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 168,
+      "label": "True",
+      "n_punct": 13,
+      "match_valid": "13/13",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -75.7951,
+      "base_margin": 7.3775,
+      "ko_punct": [
+        2.0808,
+        -2.3246
+      ],
+      "ko_attnM": [
+        3.1002,
+        -0.324
+      ],
+      "wa_punct": [
+        17.2126,
+        -10.4219
+      ],
+      "wa_attnM": [
+        -4.5639,
+        -9.0678
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 169,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -49.3675,
+      "base_margin": 10.8587,
+      "ko_punct": [
+        9.7082,
+        2.4796
+      ],
+      "ko_attnM": [
+        -5.7912,
+        -0.9341
+      ],
+      "wa_punct": [
+        -42.7819,
+        -16.0491
+      ],
+      "wa_attnM": [
+        -40.8084,
+        -15.1256
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 170,
+      "label": "Unknown",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -75.8514,
+      "base_margin": 5.3314,
+      "ko_punct": [
+        -1.8382,
+        -4.0247
+      ],
+      "ko_attnM": [
+        -6.6874,
+        -0.3983
+      ],
+      "wa_punct": [
+        -11.7884,
+        -1.5984
+      ],
+      "wa_attnM": [
+        -10.3047,
+        -3.8755
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 171,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -67.7829,
+      "base_margin": 7.4092,
+      "ko_punct": [
+        -1.5351,
+        -1.8487
+      ],
+      "ko_attnM": [
+        -20.1334,
+        -13.5097
+      ],
+      "wa_punct": [
+        -22.4483,
+        -11.21
+      ],
+      "wa_attnM": [
+        -26.7104,
+        -9.2785
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 172,
+      "label": "False",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -44.1419,
+      "base_margin": 11.4837,
+      "ko_punct": [
+        1.6892,
+        1.3742
+      ],
+      "ko_attnM": [
+        -1.5068,
+        -2.3932
+      ],
+      "wa_punct": [
+        -58.9218,
+        -17.3695
+      ],
+      "wa_attnM": [
+        -66.4001,
+        -16.5136
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 173,
+      "label": "Unknown",
+      "n_punct": 9,
+      "match_valid": "9/9",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -71.8517,
+      "base_margin": 4.23,
+      "ko_punct": [
+        1.9319,
+        -4.1405
+      ],
+      "ko_attnM": [
+        -7.6954,
+        -4.9254
+      ],
+      "wa_punct": [
+        2.6199,
+        -0.6112
+      ],
+      "wa_attnM": [
+        -37.2267,
+        -3.625
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 174,
+      "label": "True",
+      "n_punct": 16,
+      "match_valid": "16/16",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -76.0921,
+      "base_margin": 7.1279,
+      "ko_punct": [
+        0.6555,
+        -1.7828
+      ],
+      "ko_attnM": [
+        2.1995,
+        -0.291
+      ],
+      "wa_punct": [
+        -12.7249,
+        -10.7292
+      ],
+      "wa_attnM": [
+        -16.4697,
+        -9.0418
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 175,
+      "label": "False",
+      "n_punct": 14,
+      "match_valid": "14/14",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -42.7092,
+      "base_margin": 9.633,
+      "ko_punct": [
+        5.2015,
+        2.1337
+      ],
+      "ko_attnM": [
+        -3.8385,
+        -1.049
+      ],
+      "wa_punct": [
+        -50.9185,
+        -14.8817
+      ],
+      "wa_attnM": [
+        -47.2496,
+        -14.4264
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 176,
+      "label": "Unknown",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -80.6669,
+      "base_margin": 0.4244,
+      "ko_punct": [
+        -0.828,
+        -3.8332
+      ],
+      "ko_attnM": [
+        -3.6569,
+        0.2617
+      ],
+      "wa_punct": [
+        -7.5204,
+        3.6326
+      ],
+      "wa_attnM": [
+        -30.7442,
+        1.0684
+      ],
+      "correct_after_punct_ko": false,
+      "correct_after_punct_wa": true
+    },
+    {
+      "id": 177,
+      "label": "True",
+      "n_punct": 15,
+      "match_valid": "15/15",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -65.818,
+      "base_margin": 7.0716,
+      "ko_punct": [
+        -3.3645,
+        -0.8721
+      ],
+      "ko_attnM": [
+        -6.9506,
+        -1.1042
+      ],
+      "wa_punct": [
+        -1.0179,
+        -10.2663
+      ],
+      "wa_attnM": [
+        -20.6353,
+        -8.9313
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 178,
+      "label": "False",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -51.2117,
+      "base_margin": 9.3404,
+      "ko_punct": [
+        8.8108,
+        1.3096
+      ],
+      "ko_attnM": [
+        -0.5061,
+        -0.2709
+      ],
+      "wa_punct": [
+        -14.4446,
+        -14.3433
+      ],
+      "wa_attnM": [
+        -38.2058,
+        -14.7029
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": false
+    },
+    {
+      "id": 179,
+      "label": "Unknown",
+      "n_punct": 12,
+      "match_valid": "12/12",
+      "well_matched": true,
+      "attnM_includes_pos0": false,
+      "base_logit": -73.7223,
+      "base_margin": 5.3772,
+      "ko_punct": [
+        1.1929,
+        -3.8509
+      ],
+      "ko_attnM": [
+        -11.9486,
+        -4.209
+      ],
+      "wa_punct": [
+        -25.7681,
+        -1.7602
+      ],
+      "wa_attnM": [
+        -49.4731,
+        -4.3808
+      ],
+      "correct_after_punct_ko": true,
+      "correct_after_punct_wa": true
+    }
+  ]
+}
